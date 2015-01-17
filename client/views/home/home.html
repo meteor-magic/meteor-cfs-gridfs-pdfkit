@@ -1,0 +1,23 @@
+<template name="Home">
+  <div class="container">
+    <form name="image-uploader" id="imageUploader">
+      <div class="input-group">
+        <input type="file" id="fileInput" accept="image/*" multiple>
+      </div>
+    </form>
+    <div class="container">
+      {{#each images}}
+        {{> Image}}
+      {{/each}}
+    </div>
+  </div>
+  <div class="modal fade" id="PdfEditorModal" tabindex="-1" role="dialog" aria-labelledby="PdfEditorModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          {{> PdfEditor}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

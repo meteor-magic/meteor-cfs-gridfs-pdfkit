@@ -1,0 +1,98 @@
+/*****************************************************************************/
+/* Style */
+/*****************************************************************************/
+
+* {
+  -webkit-transition: all 0.1s ease;                  
+  -moz-transition: all 0.1 ease;                 
+  -o-transition: all 0.1s ease;   
+  -ms-transition: all 0.1s ease;          
+  transition: all 0.1s ease;
+}
+
+form[name="image-uploader"] {
+  text-align: center;
+  margin: 0 auto 10px auto;
+  width: 180px;
+}
+
+.image-item {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  text-align: center;
+}
+
+.image-item textarea {
+  margin-top: 5px;
+}
+
+.image-wrapper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  height: 100%;
+  width: auto;
+}
+
+.base64-btn, .pdf-btn {
+  margin-top: 10px;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+.glyphicon:hover {
+  text-decoration: none;
+}
+
+.progress, .glyphicon {
+  vertical-align: middle;
+}
+
+.progress-wrapper {
+  text-align: left;
+}
+
+.progress {
+  margin: 10px 7px;
+  display: inline-block;
+  width: 150px;
+}
+
+.download-pdf-btn {
+  height: 22px;
+  font-size: 0.75em;
+  vertical-align: initial;
+}
+
+.remove-image {
+  position: absolute;
+  background-color: rgb(255, 86, 86);
+  opacity: 0.3;
+  font-size: 0.8em;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+}
+
+.remove-image:hover {
+  opacity: 0.9;
+}
+
+.remove-image:hover::before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e014";
+  position: absolute;
+  left: 1.2px;
+  top: 1px;
+  font-size: 0.5em;
+  color: #C72828;
+}

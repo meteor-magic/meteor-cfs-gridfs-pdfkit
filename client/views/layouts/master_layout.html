@@ -1,0 +1,9 @@
+<template name="MasterLayout">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" user-scalable="no">
+  <div class="main-container">
+    {{> Header}}
+    <div id="main" class="row-fluid">
+      {{> yield}}
+    </div>
+  </div>
+</template>

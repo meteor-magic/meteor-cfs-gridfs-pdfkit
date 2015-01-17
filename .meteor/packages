@@ -1,0 +1,23 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+insecure
+cfs:standard-packages
+cfs:filesystem
+cfs:gridfs
+pascoual:pdfkit
+cfs:autoform
+iron:router
+sacha:spin
+nemo64:bootstrap
+less
+meteorhacks:npm
+
+
+npm-container
+cfs:ui
+meteorhacks:fast-render

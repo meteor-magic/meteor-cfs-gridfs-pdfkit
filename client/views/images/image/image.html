@@ -1,0 +1,26 @@
+<template name="Image">
+  <div class="image-item">
+    <div class="remove-image"></div>
+    {{#if this.isUploaded}} 
+      <div class="image-wrapper">
+        <img src="{{this.url}}">
+      </div>
+      <button class="btn btn-success btn-sm base64-btn">base64</button>
+      <button class="btn btn-primary btn-sm pdf-btn">pdf</button>
+    {{else}}
+      {{> Loading}}
+    {{/if}}
+    <div class="progress-wrapper">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: {{pdfUploadProgress}};">
+          {{pdfUploadProgress}}
+        </div>
+      </div>
+      {{#if pdfUrl}}
+        <a class="glyphicon glyphicon-download-alt btn btn-default btn-sm download-pdf-btn" href="{{pdfUrl}}" target="_blank" download></a>
+      {{else}}
+        <a class="glyphicon glyphicon-download-alt btn btn-default btn-sm download-pdf-btn" href="#" disabled></a>
+      {{/if}}
+    </div>
+  </div>
+</template>
